@@ -56,10 +56,10 @@
   top: 150px;
 } */
 .container h1 {
-  font-family: "Dongle", sans-serif;
-  font-family: "EB Garamond", serif;
-  font-family: "IBM Plex Mono", monospace;
-  font-family: "Mulish", sans-serif;
+  /* font-family: "Dongle", sans-serif; */
+  /* font-family: "EB Garamond", serif; */
+  /* font-family: "IBM Plex Mono", monospace; */
+  /* font-family: "Mulish", sans-serif; */
   /* font-family: "Neonderthaw", cursive; */
   font-weight: bold;
   padding-bottom: 10px;

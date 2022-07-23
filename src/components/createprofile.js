@@ -7,7 +7,7 @@ import Header from "./Header";
 import SideBar from "./sidebarmenu";
 import Card from "./card";
 
-function CreateProf(props, editStudent) {
+function CreateProf(props) {
   const [container, setContainer] = useState(false);
   const [file, setFile] = useState("");
   const [card, setCard] = useState({
@@ -20,19 +20,19 @@ function CreateProf(props, editStudent) {
     image: "",
   });
 
-  useEffect(() => {
-    if (editStudent) {
-      setCard({
-        subject: editStudent.subject,
-        course: editStudent.course,
+  // useEffect(() => {
+  //   if (editStudent) {
+  //     setCard({
+  //       subject: editStudent.subject,
+  //       course: editStudent.course,
 
-        Materials: editStudent.Materials,
-        Description: editStudent.Description,
-        price: editStudent.price,
-        image: editStudent.image,
-      });
-    }
-  });
+  //       Materials: editStudent.Materials,
+  //       Description: editStudent.Description,
+  //       price: editStudent.price,
+  //       image: editStudent.image,
+  //     });
+  //   }
+  // });
 
   function handleChanges(e) {
     setFile(URL.createObjectURL(e.target.files[0]));
@@ -52,7 +52,7 @@ function CreateProf(props, editStudent) {
       price: "",
       image: "",
     });
-
+    setCard("");
     togglefile();
   }
   function handleChange(e) {

@@ -7,9 +7,9 @@ function Card(props) {
     rem.remove();
   }
 
-  function editButton(e) {
-    getrollnoEdit(e.target.name);
-  }
+  // function editButton(e) {
+  //   getrollnoEdit(e.target.name);
+  // }
   const [count, setCount] = useState(0);
   function handleClick(e) {
     const star = e.target;
@@ -57,7 +57,7 @@ function Card(props) {
               flex justify-start px-5 py-2.5 bg-red-600 
               text-white font-medium text-xs leading-tight uppercase rounded shadow-md
                hover:bg-red-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out "
-              onClick={editButton}
+              // onClick={editButton}
             >
               edit
             </button>

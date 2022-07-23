@@ -3,6 +3,7 @@ import { MdDashboard } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { VscFeedback } from "react-icons/vsc";
 import { BiArrowBack, BiFontSize } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 import CreateProf from "./createprofile";
 
@@ -36,13 +37,13 @@ function SideBar() {
             {/* </Link> */}
           </li>
           <li>
-            <a>
+            <Link to="/profile">
               <VscFeedback
                 className="text-red-700 
                    text-lg inline m-10"
               />
               <span style={{ fontSize: "20px" }}>Profile</span>
-            </a>
+            </Link>
           </li>
           <li>
             <a>

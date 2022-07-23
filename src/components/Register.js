@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { scryRenderedDOMComponentsWithClass } from "react-dom/test-utils";
+import { Link } from "react-router-dom";
 import "./register.css";
 
 function Register() {
@@ -116,9 +117,13 @@ function Register() {
               className="w-[80%] h-[40px]"
             />
           </div>
-          <button className="bg-red-500 mt-3 w-[90px] h-[30px] hover:bg-red-400 text-white rounded items-center">
-            submit
-          </button>
+          <Link to="/login">
+            <div>
+              <button className="bg-red-500 mt-3 w-[90px] h-[30px] hover:bg-red-400 text-white rounded items-center">
+                submit
+              </button>
+            </div>
+          </Link>
         </form>
       </div>
     </div>
